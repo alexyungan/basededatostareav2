@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#000"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center"
+    android:layout_height="250dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Crear Tarea"
+        android:id="@+id/nombre_layout_dialog"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="descripcion:"
+
+        android:id="@+id/textView2"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_descripcion_tarea"
+        android:gravity="center"
+        android:hint="descripcion"
+        android:textColor="#e7e3e3"
+        android:textColorHint="#e7e3e3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hora"
+        android:id="@+id/textView3"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_hora_tarea"
+        android:gravity="center"
+        android:hint="Hora"
+        android:textColor="#e7e3e3"
+        android:textColorHint="#e7e3e3" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alta Prioridad"
+        android:id="@+id/switch_estado_tarea"
+        android:gravity="center"
+        android:textColor="#e7e3e3"
+        android:checked="false" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="61dp"
+        android:layout_height="match_parent"
+        android:src="@android:drawable/ic_input_add"
+        android:id="@+id/floating_button_crear_tarea" />
+</LinearLayout>
